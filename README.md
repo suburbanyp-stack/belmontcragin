@@ -57,3 +57,6 @@ This project is deployed using Firebase Hosting. To deploy updates:
    ```bash
    firebase deploy --only hosting
    ```
+
+<!-- CI/CD Test Push: Active and verified via GitHub Actions -->
+
