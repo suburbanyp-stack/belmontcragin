@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BelmontCragin.com - The digital community hub for the Belmont Cragin neighborhood in Chicago. Connect with local workers, businesses, resources, and neighbors.">
+  <meta name="keywords" content="Belmont Cragin, Chicago neighborhood, local businesses, community portal, BelmontCragin.com, community resources">
+  <meta name="author" content="BelmontCragin.com">
+  <title>BelmontCragin.com | Belmont Cragin Community Portal</title>
+  
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- --- Header / Navigation --- -->
+  <header class="header" id="main-header">
+    <div class="container nav-container">
+      <a href="#" class="logo" id="site-logo">
+        <i class="fa-solid fa-people-roof" style="color: var(--color-primary);"></i>
+        Belmont<span>Cragin.com</span>
+      </a>
+      
+      <button class="menu-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#directory" class="nav-link">Resource Directory</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#stats" class="nav-link">Impact</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+            Social Media <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+          </a>
+          <ul class="dropdown-menu" aria-label="Social Media Submenu">
+            <li>
+              <a href="https://www.facebook.com/belmontcentraldotcom/" target="_blank" rel="noopener noreferrer" class="dropdown-item">
+                <i class="fa-brands fa-facebook-f" style="color: #1877f2; margin-right: 8px;"></i> Facebook
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#directory" class="btn btn-primary">Join Directory</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- --- Hero Section --- -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-badge"><i class="fa-solid fa-location-dot"></i> Belmont Cragin, Chicago</span>
+        <h1 class="hero-title">Connecting Our Diverse <span>Community & Talents</span></h1>
+        <p class="hero-subtitle">
+          BelmontCragin.com is a digital hub celebrating local workers, small businesses, schools, and families. 
+          Discover resources, support local workers, and see the faces that make our neighborhood thrive.
+        </p>
+        <div class="hero-actions">
+          <a href="#directory" class="btn btn-primary" id="hero-btn-primary">Explore Directory</a>
+          <a href="#about" class="btn btn-secondary" id="hero-btn-secondary">Learn More</a>
+        </div>
+      </div>
+      
+      <div class="hero-image-wrapper">
+        <img 
+          src="community_cover_optimized.webp" 
+          alt="Diverse people working different community jobs in Belmont Cragin" 
+          class="hero-image"
+          loading="eager"
+        >
+        <!-- Premium glassmorphism card overlay -->
+        <div class="hero-glass-card">
+          <div class="hero-glass-card-info">
+            <h4>Belmont Cragin</h4>
+            <p>Representing 80,000+ residents & workers</p>
+          </div>
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- About Section --- -->
+  <section class="section section-bg" id="about" style="border-top: 1px solid var(--glass-border);">
+    <div class="container">
+      <div class="mission-grid">
+        <div>
+          <span class="hero-badge" style="margin-bottom: 16px;"><i class="fa-solid fa-heart"></i> Our Mission</span>
+          <h2 class="section-title" style="margin-bottom: 24px; text-align: left;">Every Voice, Every Job, Every Neighbor</h2>
+          <p class="section-subtitle" style="text-align: left; margin-bottom: 20px;">
+            Belmont Cragin is built on the hard work of a diverse group of residents. From the baristas who brew our morning coffee, to the teachers who inspire our children, the builders raising our structures, and the healthcare workers keeping us safe—we thrive because we work together.
+          </p>
+          <p class="section-subtitle" style="text-align: left;">
+            Our mission with BelmontCragin.com is to provide a central platform that bridges local businesses with residents, encourages neighborhood volunteerism, and serves as a reliable portal for public and private community support.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 24px; justify-content: center;">
+          <div class="card" style="padding: 24px; flex-direction: row; gap: 20px; align-items: center;">
+            <div class="card-icon"><i class="fa-solid fa-shop"></i></div>
+            <div>
+              <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Support Local Businesses</h4>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">Keep resources in the neighborhood by choosing local storefronts.</p>
+            </div>
+          </div>
+          <div class="card" style="padding: 24px; flex-direction: row; gap: 20px; align-items: center;">
+            <div class="card-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div>
+              <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Find Community Jobs</h4>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">Connect local employers with skilled Belmont Cragin job seekers.</p>
+            </div>
+          </div>
+          <div class="card" style="padding: 24px; flex-direction: row; gap: 20px; align-items: center;">
+            <div class="card-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+            <div>
+              <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Access Social Resources</h4>
+              <p style="font-size: 0.9rem; color: var(--text-secondary);">Direct pathways to housing, education, and language support services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Directory / Features Section --- -->
+  <section class="section" id="directory">
+    <div class="container">
+      <div class="section-header">
+        <span class="hero-badge" style="align-self: center;"><i class="fa-solid fa-folder-open"></i> Resource Directory</span>
+        <h2 class="section-title">Explore Neighborhood Services</h2>
+        <p class="section-subtitle">
+          Search local services, schools, and workers who keep our Belmont Cragin neighborhood strong.
+        </p>
+      </div>
+
+      <!-- Live Search Box -->
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input 
+          type="text" 
+          id="directory-search" 
+          class="search-input" 
+          placeholder="Search jobs, cafes, schools, builders..."
+          aria-label="Search directory"
+        >
+        <div id="results-count" style="margin-top: 10px; text-align: center; font-size: 0.9rem; color: var(--color-primary-dark); font-weight: 500;"></div>
+      </div>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-mug-hot"></i>
+          </div>
+          <h3 class="card-title">Local Cafes & Dining</h3>
+          <p class="card-desc">
+            Discover neighborhood bakeries, family-owned coffee shops, and local diners that represent Belmont Cragin's rich culinary flavors.
+          </p>
+          <a href="#" class="card-link">View Listings <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <h3 class="card-title">Education & Schools</h3>
+          <p class="card-desc">
+            Find details on local Chicago Public Schools, tutoring centers, and after-school programs supporting community youth.
+          </p>
+          <a href="#" class="card-link">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-helmet-safety"></i>
+          </div>
+          <h3 class="card-title">Construction & Trades</h3>
+          <p class="card-desc">
+            Connect with certified local builders, contractors, plumbers, electricians, and handymen in Belmont Cragin.
+          </p>
+          <a href="#" class="card-link">Find Contractors <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-user-doctor"></i>
+          </div>
+          <h3 class="card-title">Health & Wellness</h3>
+          <p class="card-desc">
+            Access neighborhood medical clinics, dentists, family counselors, and community health resource networks.
+          </p>
+          <a href="#" class="card-link">Get Healthcare <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h3 class="card-title">Local Art & Creators</h3>
+          <p class="card-desc">
+            Meet local artists, muralists, musicians, and digital creators who bring vibrancy and culture to our neighborhood.
+          </p>
+          <a href="#" class="card-link">Meet Creators <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+          <div class="card-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3 class="card-title">Professional & Tech</h3>
+          <p class="card-desc">
+            Modern solutions including bookkeeping, legal support, marketing, and IT consulting from professionals near you.
+          </p>
+          <a href="#" class="card-link">Browse Services <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Community Stats & CTA Section --- -->
+  <section class="cta" id="stats">
+    <div class="container cta-container">
+      <h2>Build a Stronger Belmont Cragin</h2>
+      <p>
+        When local services thrive, our whole community benefits. 
+        Register your local business, list your services, or sign up as a volunteer today.
+      </p>
+      
+      <div class="cta-stats">
+        <div class="stat-item">
+          <h3>80,000+</h3>
+          <p>Neighbors & Residents</p>
+        </div>
+        <div class="stat-item">
+          <h3>450+</h3>
+          <p>Local Businesses</p>
+        </div>
+        <div class="stat-item">
+          <h3>100%</h3>
+          <p>Community Driven</p>
+        </div>
+      </div>
+      
+      <div class="cta-actions">
+        <a href="#contact" class="btn btn-primary" style="background-color: var(--color-accent); box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);">Register Now</a>
+        <a href="#about" class="btn btn-secondary" style="border-color: #ffffff; color: #ffffff;">Volunteer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Footer --- -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <i class="fa-solid fa-people-roof" style="color: var(--color-primary);"></i>
+            Belmont<span>Cragin.com</span>
+          </a>
+          <p>A community-run digital portal bridging local businesses, workers, and families in Chicago's Belmont Cragin neighborhood.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/belmontcentraldotcom/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-group">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#directory" class="footer-link">Resource Directory</a></li>
+            <li><a href="#stats" class="footer-link">Impact Statistics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="#" class="footer-link">Register Business</a></li>
+            <li><a href="#" class="footer-link">Volunteer Program</a></li>
+            <li><a href="#" class="footer-link">Submit Job Listing</a></li>
+            <li><a href="#" class="footer-link">Local Events Calendar</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Stay Connected</h4>
+          <p>Receive local community updates, news, and resource guidelines in your inbox.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to BelmontCragin.com!');">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" aria-label="Email address" required>
+            <button type="submit" class="btn btn-primary" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 BelmontCragin.com. All rights reserved. Made with <i class="fa-solid fa-heart" style="color: var(--color-accent);"></i> for Belmont Cragin.</p>
+        <p>
+          <a href="privacy.html" style="margin-right: 15px; hover: color: var(--color-primary);">Privacy Policy</a>
+          <a href="terms.html" style="hover: color: var(--color-primary);">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
